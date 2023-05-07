@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.calculator {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #393646;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contain {
+    display: flex;
+    flex-direction: row;
+}
+
+.contain div {
+    display: flex;
+    flex-direction: column;
+}
+
+.display input{
+    text-align: right;
+    flex: 1;
+    height: 80px;
+    font-size: 50px;
+    background-color: transparent;
+    width: 315px;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+form .contain div input{
+    height: 60px;
+    width: 60px;
+    border: none;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+form .contain div input.operator {
+    background-color: #6D5D6E;
+}
+
+.calculator form div input.add {
+    height: 140px;
+}
+
+.calculator form .contain div input:active {
+    box-shadow: 5px 5px 10px transparent, -1px -1px 10px #000000;
+}
+
+form .contain div input.ac {
+    background-color: #ED2B2A;
+}
